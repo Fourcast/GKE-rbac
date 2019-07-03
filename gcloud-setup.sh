@@ -30,6 +30,11 @@ gcloud container clusters get-credentials $CLUSTER_NAME --project $PROJECT --zon
 echo "### Step 5 - Creating namespace and role for namespace"
 kubectl apply -f rbac.yaml
 
-# Now all users from the Group will be able to use the same `gcloud container clusters get-credentials` and be limited to the DEV namespace. Just make sure they do not have more permissive IAM roles on GCP, and Legacy ABAC is disabled if you are trying this on an existing cluster!
+# Now all users from the Group will be able to use the dev namespace!
+ #and be limited to the DEV namespace. Just make sure they do not have more permissive IAM roles on GCP, and Legacy ABAC is disabled if you are trying this on an existing cluster!
 echo "### Step 6"
-echo "There is no step 6. Time for a good Belgian beer!"
+echo "have any of the members of the group run the following command to gain (limited) access"
+echo "gcloud container clusters get-credentials ${CLUSTER_NAME} --project ${PROJECT} --zone ${ZONE}"
+
+echo "### Step 7"
+echo "There is no step 7. Time for a good Belgian beer\!"
