@@ -1,4 +1,4 @@
-title: GKE_authentication
+title: GKE Authenticating Users
 description: Role with minimal permissions required to authenticate yourself to a GKE cluster.
 stage: ALPHA
 includedPermissions:
