@@ -1,8 +1,8 @@
 #!/bin/bash
 PROJECT=pega88-sandbox
 ZONE=europe-west1-d
-CLUSTER_NAME=gke-rbac
-ROLE_NAME=GKE_authenticate_users
+CLUSTER_NAME=gke-rbac-cluster
+ROLE_NAME=GKE_authenticated_users
 DEV_GROUP=team_1@fourcast.io
 GKE_DOMAIN_GROUP=gke-security-groups@fourcast.io
 
