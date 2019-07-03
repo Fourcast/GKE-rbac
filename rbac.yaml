@@ -1,0 +1,30 @@
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: nessie-developer
+  namespace: nessie
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: nessie
+  name: nessie-developer
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "watch", "list"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: nessie-developer-binding
+  namespace: nessie
+subjects:
+- kind: ServiceAccount
+  name: nessie-developer
+  namespace: nessie
+roleRef:
+  kind: Role
+  name: nessie-developer
+  apiGroup: rbac.authorization.k8s.io
