@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECT=my-gke-rbac-sandbox
+PROJECT=pega88-sandbox
 ZONE=europe-west1-d
 CLUSTER_NAME=gke-rbac
 ROLE_NAME=GKE_authenticate_users
