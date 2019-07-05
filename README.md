@@ -1,5 +1,5 @@
 # GKE-rbac
-This repo accomanies the blogpost on Google Kubernetes RBAC on p[URL].
+This repo accomanies the blogpost on Google Kubernetes RBAC on [URL].
 
 ### gcloud-setup.sh
 Script automating the full workflow. Variables need to be replaced before running (Google Group, GCP Project..). Code is enriched with comments for more details.
