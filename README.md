@@ -1,5 +1,4 @@
-![Fourcast Logo](fourcast.png)
-![Kubernetes Logo](k8s.png)
+![Fourcast Kubernetes Logo](rbac.png)
 
 # GKE-rbac
 This repo accomanies the blogpost on Google Kubernetes RBAC on [URL].
