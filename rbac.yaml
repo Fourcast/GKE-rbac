@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: team_1
+  name: team-1
 ---
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  namespace: team_1
+  namespace: team-1
   name: team_1-rw
 rules:
 - apiGroups: ["extensions", "apps"]
@@ -16,7 +16,7 @@ rules:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  namespace: team_1
+  namespace: team-1
   name: team_1-binding
 subjects:
 - kind: Group
@@ -28,4 +28,3 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 
 
-  
